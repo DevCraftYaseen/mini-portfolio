@@ -18,7 +18,7 @@ export default function AboutPage() {
         <span className="px-4 py-2 rounded-full bg-yellow-900/40 text-yellow-300 font-semibold border border-yellow-400">UI/UX</span>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
-        <Link href="/contact" className="px-6 py-2 rounded-lg bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-white font-semibold shadow-md hover:scale-105 transition-transform">Contact Me</Link>
+        <Link href="/Contact" className="px-6 py-2 rounded-lg bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-white font-semibold shadow-md hover:scale-105 transition-transform">Contact Me</Link>
         <Link href="/" className="px-6 py-2 rounded-lg border border-cyan-400 text-cyan-300 font-semibold bg-gray-900/60 hover:bg-cyan-400/20 transition-colors">Back to Home</Link>
         <Link href="/projects" className="px-6 py-2 rounded-lg border border-purple-400 text-purple-300 font-semibold bg-gray-900/60 hover:bg-purple-400/20 transition-colors">View Projects</Link>
       </div>
