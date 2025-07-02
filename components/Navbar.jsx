@@ -9,9 +9,9 @@ export default function Navbar() {
   const handleClose = () => setSidebarOpen(false);
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
+    { href: "/About", label: "About" },
     { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
+    { href: "/Contact", label: "Contact" },
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50 bg-black/60 md:hidden" onClick={handleClose}></div>
       )}
       {/* Sidebar */}
-      <aside className={`fixed top-0 right-0 h-full w-64 bg-gray-900 shadow-lg z-50 transform transition-transform duration-300 md:hidden ${sidebarOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <aside className={`fixed top-0 right-0 min-h-dvh w-64 bg-gray-900 shadow-lg z-50 transform transition-transform duration-300 md:hidden ${sidebarOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-800">
           <Image src="/DevCraftYaseenLogo.png" alt="DevCraftYaseen Logo" width={40} height={40} className="rounded-full border-2 border-cyan-400 bg-gray-800/60" />
           <button onClick={handleClose} aria-label="Close menu" className="p-2 ml-2 rounded-lg hover:bg-gray-800/60">
